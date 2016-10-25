@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA1090631DB656A000590D4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1090621DB656A000590D4A /* main.m */; };
+		EA1090661DB656A000590D4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1090651DB656A000590D4A /* AppDelegate.m */; };
+		EA1090691DB656A000590D4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1090681DB656A000590D4A /* ViewController.m */; };
+		EA10906C1DB656A100590D4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA10906A1DB656A100590D4A /* Main.storyboard */; };
+		EA10906E1DB656A100590D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA10906D1DB656A100590D4A /* Assets.xcassets */; };
+		EA1090711DB656A100590D4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA10906F1DB656A100590D4A /* LaunchScreen.storyboard */; };
+		EA10907B1DB6574A00590D4A /* MQTT.m in Sources */ = {isa = PBXBuildFile; fileRef = EA10907A1DB6574A00590D4A /* MQTT.m */; };
+		EA15381F1DBA51130066393C /* MCSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = EA15381E1DBA51130066393C /* MCSettings.m */; };
+		EA1538231DBA51D10066393C /* MCClientSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1538221DBA51D10066393C /* MCClientSocket.m */; };
+		EA1538271DBA74710066393C /* MCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1538261DBA74710066393C /* MCSettingsViewController.m */; };
+		EA21CBE81DBF56F30021896A /* MCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EA21CBE71DBF56F30021896A /* MCParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA10905E1DB656A000590D4A /* MqttIOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MqttIOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA1090621DB656A000590D4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA1090641DB656A000590D4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA1090651DB656A000590D4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA1090671DB656A000590D4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EA1090681DB656A000590D4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EA10906B1DB656A100590D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA10906D1DB656A100590D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA1090701DB656A100590D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA1090721DB656A100590D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA1090791DB6574A00590D4A /* MQTT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTT.h; sourceTree = "<group>"; };
+		EA10907A1DB6574A00590D4A /* MQTT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTT.m; sourceTree = "<group>"; };
+		EA15381D1DBA51130066393C /* MCSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSettings.h; sourceTree = "<group>"; };
+		EA15381E1DBA51130066393C /* MCSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSettings.m; sourceTree = "<group>"; };
+		EA1538211DBA51D10066393C /* MCClientSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCClientSocket.h; sourceTree = "<group>"; };
+		EA1538221DBA51D10066393C /* MCClientSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCClientSocket.m; sourceTree = "<group>"; };
+		EA1538251DBA74700066393C /* MCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSettingsViewController.h; sourceTree = "<group>"; };
+		EA1538261DBA74710066393C /* MCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSettingsViewController.m; sourceTree = "<group>"; };
+		EA21CBE61DBF56F30021896A /* MCParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCParser.h; sourceTree = "<group>"; };
+		EA21CBE71DBF56F30021896A /* MCParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCParser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA10905B1DB656A000590D4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA1090551DB656A000590D4A = {
+			isa = PBXGroup;
+			children = (
+				EA1090601DB656A000590D4A /* MqttIOSClient */,
+				EA10905F1DB656A000590D4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA10905F1DB656A000590D4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA10905E1DB656A000590D4A /* MqttIOSClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA1090601DB656A000590D4A /* MqttIOSClient */ = {
+			isa = PBXGroup;
+			children = (
+				EA1538201DBA511C0066393C /* Settings */,
+				EA1090781DB656CE00590D4A /* MQTT */,
+				EA1538241DBA51D40066393C /* Client */,
+				EA1090641DB656A000590D4A /* AppDelegate.h */,
+				EA1090651DB656A000590D4A /* AppDelegate.m */,
+				EA1090671DB656A000590D4A /* ViewController.h */,
+				EA1090681DB656A000590D4A /* ViewController.m */,
+				EA10906A1DB656A100590D4A /* Main.storyboard */,
+				EA10906D1DB656A100590D4A /* Assets.xcassets */,
+				EA10906F1DB656A100590D4A /* LaunchScreen.storyboard */,
+				EA1090721DB656A100590D4A /* Info.plist */,
+				EA1090611DB656A000590D4A /* Supporting Files */,
+			);
+			path = MqttIOSClient;
+			sourceTree = "<group>";
+		};
+		EA1090611DB656A000590D4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA1090621DB656A000590D4A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA1090781DB656CE00590D4A /* MQTT */ = {
+			isa = PBXGroup;
+			children = (
+				EA1090791DB6574A00590D4A /* MQTT.h */,
+				EA10907A1DB6574A00590D4A /* MQTT.m */,
+			);
+			name = MQTT;
+			sourceTree = "<group>";
+		};
+		EA1538201DBA511C0066393C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EA15381D1DBA51130066393C /* MCSettings.h */,
+				EA15381E1DBA51130066393C /* MCSettings.m */,
+				EA1538251DBA74700066393C /* MCSettingsViewController.h */,
+				EA1538261DBA74710066393C /* MCSettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		EA1538241DBA51D40066393C /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				EA21CBE91DBF56FA0021896A /* Parser */,
+				EA1538211DBA51D10066393C /* MCClientSocket.h */,
+				EA1538221DBA51D10066393C /* MCClientSocket.m */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		EA21CBE91DBF56FA0021896A /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				EA21CBE61DBF56F30021896A /* MCParser.h */,
+				EA21CBE71DBF56F30021896A /* MCParser.m */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA10905D1DB656A000590D4A /* MqttIOSClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA1090751DB656A100590D4A /* Build configuration list for PBXNativeTarget "MqttIOSClient" */;
+			buildPhases = (
+				EA10905A1DB656A000590D4A /* Sources */,
+				EA10905B1DB656A000590D4A /* Frameworks */,
+				EA10905C1DB656A000590D4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MqttIOSClient;
+			productName = MqttIOSClient;
+			productReference = EA10905E1DB656A000590D4A /* MqttIOSClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA1090561DB656A000590D4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = AntonYereshchenko;
+				TargetAttributes = {
+					EA10905D1DB656A000590D4A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = W9D6XM3HMP;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EA1090591DB656A000590D4A /* Build configuration list for PBXProject "MqttIOSClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA1090551DB656A000590D4A;
+			productRefGroup = EA10905F1DB656A000590D4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA10905D1DB656A000590D4A /* MqttIOSClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA10905C1DB656A000590D4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1090711DB656A100590D4A /* LaunchScreen.storyboard in Resources */,
+				EA10906E1DB656A100590D4A /* Assets.xcassets in Resources */,
+				EA10906C1DB656A100590D4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA10905A1DB656A000590D4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1090691DB656A000590D4A /* ViewController.m in Sources */,
+				EA1090661DB656A000590D4A /* AppDelegate.m in Sources */,
+				EA21CBE81DBF56F30021896A /* MCParser.m in Sources */,
+				EA1538231DBA51D10066393C /* MCClientSocket.m in Sources */,
+				EA1090631DB656A000590D4A /* main.m in Sources */,
+				EA10907B1DB6574A00590D4A /* MQTT.m in Sources */,
+				EA1538271DBA74710066393C /* MCSettingsViewController.m in Sources */,
+				EA15381F1DBA51130066393C /* MCSettings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA10906A1DB656A100590D4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA10906B1DB656A100590D4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA10906F1DB656A100590D4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA1090701DB656A100590D4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA1090731DB656A100590D4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA1090741DB656A100590D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA1090761DB656A100590D4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W9D6XM3HMP;
+				INFOPLIST_FILE = MqttIOSClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AntonYereshchenko.MqttIOSClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EA1090771DB656A100590D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W9D6XM3HMP;
+				INFOPLIST_FILE = MqttIOSClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AntonYereshchenko.MqttIOSClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA1090591DB656A000590D4A /* Build configuration list for PBXProject "MqttIOSClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA1090731DB656A100590D4A /* Debug */,
+				EA1090741DB656A100590D4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA1090751DB656A100590D4A /* Build configuration list for PBXNativeTarget "MqttIOSClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA1090761DB656A100590D4A /* Debug */,
+				EA1090771DB656A100590D4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA1090561DB656A000590D4A /* Project object */;
+}
