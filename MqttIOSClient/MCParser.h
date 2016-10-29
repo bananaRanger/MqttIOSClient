@@ -6,29 +6,17 @@
 //  Copyright © 2016 AntonYereshchenko. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-enum MCRequestType {
-
-    MCReserved      = 0x00,
-    MCConnect       = 0x10,
-    MCConnack       = 0x20,
-    MCPublish       = 0x30,
-    MCPuback        = 0x40,
-    MCPubrec        = 0x50,
-    MCPubrel        = 0x60,
-    MCPubcomp       = 0x70,
-    MCSubscribe     = 0x80,
-    MCSuback        = 0x90,
-    MCUnsubscribe   = 0xA0,
-    MCUnsuback      = 0xB0,
-    MCPingreq       = 0xC0,
-    MCPingreso      = 0xD0,
-    MCDisconnect    = 0xE0
-};
+#import "MCLength.h"
+#import "MCMessage.h"
+#import "MCConnect.h"
+#import "MCConnack.h"
+#import "MCPingreq.h"
+#import "MCPingresp.h"
+#import "MCDisconnect.h"
 
 @interface MCParser : NSObject
 
-- (NSDictionary *) parseData : (NSData *) data;
+- (NSMutableData *) encode : (id<MCMessage>) message;
+- (id<MCMessage>) decode : (NSMutableData *) buffer;
 
 @end

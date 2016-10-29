@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA0FEF821DC3D6C60065DAA2 /* MCDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0FEF811DC3D6C60065DAA2 /* MCDashboardViewController.m */; };
 		EA1090631DB656A000590D4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1090621DB656A000590D4A /* main.m */; };
 		EA1090661DB656A000590D4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1090651DB656A000590D4A /* AppDelegate.m */; };
 		EA1090691DB656A000590D4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1090681DB656A000590D4A /* ViewController.m */; };
@@ -17,10 +18,19 @@
 		EA15381F1DBA51130066393C /* MCSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = EA15381E1DBA51130066393C /* MCSettings.m */; };
 		EA1538231DBA51D10066393C /* MCClientSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1538221DBA51D10066393C /* MCClientSocket.m */; };
 		EA1538271DBA74710066393C /* MCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1538261DBA74710066393C /* MCSettingsViewController.m */; };
+		EA173D4A1DC4A01700078D6A /* MCLength.m in Sources */ = {isa = PBXBuildFile; fileRef = EA173D491DC4A01700078D6A /* MCLength.m */; };
+		EA173D4E1DC4A63200078D6A /* MCConnack.m in Sources */ = {isa = PBXBuildFile; fileRef = EA173D4D1DC4A63200078D6A /* MCConnack.m */; };
+		EA173D541DC4F38900078D6A /* MCPingreq.m in Sources */ = {isa = PBXBuildFile; fileRef = EA173D531DC4F38900078D6A /* MCPingreq.m */; };
+		EA173D571DC4F39600078D6A /* MCPingresp.m in Sources */ = {isa = PBXBuildFile; fileRef = EA173D561DC4F39600078D6A /* MCPingresp.m */; };
+		EA173D5E1DC4F60600078D6A /* MCTimingThread.m in Sources */ = {isa = PBXBuildFile; fileRef = EA173D5D1DC4F60600078D6A /* MCTimingThread.m */; };
 		EA21CBE81DBF56F30021896A /* MCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EA21CBE71DBF56F30021896A /* MCParser.m */; };
+		EAE97C021DC2074800521457 /* MCConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE97C011DC2074800521457 /* MCConnect.m */; };
+		EAE97C061DC2888100521457 /* MCDisconnect.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE97C051DC2888100521457 /* MCDisconnect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA0FEF801DC3D6C60065DAA2 /* MCDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDashboardViewController.h; sourceTree = "<group>"; };
+		EA0FEF811DC3D6C60065DAA2 /* MCDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDashboardViewController.m; sourceTree = "<group>"; };
 		EA10905E1DB656A000590D4A /* MqttIOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MqttIOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1090621DB656A000590D4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA1090641DB656A000590D4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,8 +49,23 @@
 		EA1538221DBA51D10066393C /* MCClientSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCClientSocket.m; sourceTree = "<group>"; };
 		EA1538251DBA74700066393C /* MCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSettingsViewController.h; sourceTree = "<group>"; };
 		EA1538261DBA74710066393C /* MCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSettingsViewController.m; sourceTree = "<group>"; };
+		EA173D481DC4A01700078D6A /* MCLength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLength.h; sourceTree = "<group>"; };
+		EA173D491DC4A01700078D6A /* MCLength.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLength.m; sourceTree = "<group>"; };
+		EA173D4C1DC4A63200078D6A /* MCConnack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCConnack.h; sourceTree = "<group>"; };
+		EA173D4D1DC4A63200078D6A /* MCConnack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCConnack.m; sourceTree = "<group>"; };
+		EA173D521DC4F38900078D6A /* MCPingreq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPingreq.h; sourceTree = "<group>"; };
+		EA173D531DC4F38900078D6A /* MCPingreq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPingreq.m; sourceTree = "<group>"; };
+		EA173D551DC4F39600078D6A /* MCPingresp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPingresp.h; sourceTree = "<group>"; };
+		EA173D561DC4F39600078D6A /* MCPingresp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPingresp.m; sourceTree = "<group>"; };
+		EA173D5C1DC4F60600078D6A /* MCTimingThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTimingThread.h; sourceTree = "<group>"; };
+		EA173D5D1DC4F60600078D6A /* MCTimingThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTimingThread.m; sourceTree = "<group>"; };
 		EA21CBE61DBF56F30021896A /* MCParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCParser.h; sourceTree = "<group>"; };
 		EA21CBE71DBF56F30021896A /* MCParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCParser.m; sourceTree = "<group>"; };
+		EAE97BFD1DC2052A00521457 /* MCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMessage.h; sourceTree = "<group>"; };
+		EAE97C001DC2074800521457 /* MCConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCConnect.h; sourceTree = "<group>"; };
+		EAE97C011DC2074800521457 /* MCConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCConnect.m; sourceTree = "<group>"; };
+		EAE97C041DC2888100521457 /* MCDisconnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDisconnect.h; sourceTree = "<group>"; };
+		EAE97C051DC2888100521457 /* MCDisconnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDisconnect.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA0FEF7F1DC3D6890065DAA2 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				EA0FEF801DC3D6C60065DAA2 /* MCDashboardViewController.h */,
+				EA0FEF811DC3D6C60065DAA2 /* MCDashboardViewController.m */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
 		EA1090551DB656A000590D4A = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +107,10 @@
 		EA1090601DB656A000590D4A /* MqttIOSClient */ = {
 			isa = PBXGroup;
 			children = (
+				EA173D4B1DC4A02000078D6A /* Length */,
 				EA1538201DBA511C0066393C /* Settings */,
+				EA0FEF7F1DC3D6890065DAA2 /* Dashboard */,
+				EAE97BFE1DC206F600521457 /* Messages */,
 				EA1090781DB656CE00590D4A /* MQTT */,
 				EA1538241DBA51D40066393C /* Client */,
 				EA1090641DB656A000590D4A /* AppDelegate.h */,
@@ -100,8 +137,10 @@
 		EA1090781DB656CE00590D4A /* MQTT */ = {
 			isa = PBXGroup;
 			children = (
+				EA21CBE91DBF56FA0021896A /* Parser */,
 				EA1090791DB6574A00590D4A /* MQTT.h */,
 				EA10907A1DB6574A00590D4A /* MQTT.m */,
+				EA173D5F1DC4F60900078D6A /* TimingThread */,
 			);
 			name = MQTT;
 			sourceTree = "<group>";
@@ -120,11 +159,55 @@
 		EA1538241DBA51D40066393C /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				EA21CBE91DBF56FA0021896A /* Parser */,
 				EA1538211DBA51D10066393C /* MCClientSocket.h */,
 				EA1538221DBA51D10066393C /* MCClientSocket.m */,
 			);
 			name = Client;
+			sourceTree = "<group>";
+		};
+		EA173D4B1DC4A02000078D6A /* Length */ = {
+			isa = PBXGroup;
+			children = (
+				EA173D481DC4A01700078D6A /* MCLength.h */,
+				EA173D491DC4A01700078D6A /* MCLength.m */,
+			);
+			name = Length;
+			sourceTree = "<group>";
+		};
+		EA173D4F1DC4A63500078D6A /* Connack */ = {
+			isa = PBXGroup;
+			children = (
+				EA173D4C1DC4A63200078D6A /* MCConnack.h */,
+				EA173D4D1DC4A63200078D6A /* MCConnack.m */,
+			);
+			name = Connack;
+			sourceTree = "<group>";
+		};
+		EA173D501DC4F36600078D6A /* Pingreq */ = {
+			isa = PBXGroup;
+			children = (
+				EA173D521DC4F38900078D6A /* MCPingreq.h */,
+				EA173D531DC4F38900078D6A /* MCPingreq.m */,
+			);
+			name = Pingreq;
+			sourceTree = "<group>";
+		};
+		EA173D511DC4F37200078D6A /* Pingresp */ = {
+			isa = PBXGroup;
+			children = (
+				EA173D551DC4F39600078D6A /* MCPingresp.h */,
+				EA173D561DC4F39600078D6A /* MCPingresp.m */,
+			);
+			name = Pingresp;
+			sourceTree = "<group>";
+		};
+		EA173D5F1DC4F60900078D6A /* TimingThread */ = {
+			isa = PBXGroup;
+			children = (
+				EA173D5C1DC4F60600078D6A /* MCTimingThread.h */,
+				EA173D5D1DC4F60600078D6A /* MCTimingThread.m */,
+			);
+			name = TimingThread;
 			sourceTree = "<group>";
 		};
 		EA21CBE91DBF56FA0021896A /* Parser */ = {
@@ -134,6 +217,37 @@
 				EA21CBE71DBF56F30021896A /* MCParser.m */,
 			);
 			name = Parser;
+			sourceTree = "<group>";
+		};
+		EAE97BFE1DC206F600521457 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				EAE97BFD1DC2052A00521457 /* MCMessage.h */,
+				EAE97BFF1DC2070600521457 /* Connect */,
+				EA173D4F1DC4A63500078D6A /* Connack */,
+				EA173D501DC4F36600078D6A /* Pingreq */,
+				EA173D511DC4F37200078D6A /* Pingresp */,
+				EAE97C031DC2885500521457 /* Disconnect */,
+			);
+			name = Messages;
+			sourceTree = "<group>";
+		};
+		EAE97BFF1DC2070600521457 /* Connect */ = {
+			isa = PBXGroup;
+			children = (
+				EAE97C001DC2074800521457 /* MCConnect.h */,
+				EAE97C011DC2074800521457 /* MCConnect.m */,
+			);
+			name = Connect;
+			sourceTree = "<group>";
+		};
+		EAE97C031DC2885500521457 /* Disconnect */ = {
+			isa = PBXGroup;
+			children = (
+				EAE97C041DC2888100521457 /* MCDisconnect.h */,
+				EAE97C051DC2888100521457 /* MCDisconnect.m */,
+			);
+			name = Disconnect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,14 +322,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA173D541DC4F38900078D6A /* MCPingreq.m in Sources */,
 				EA1090691DB656A000590D4A /* ViewController.m in Sources */,
 				EA1090661DB656A000590D4A /* AppDelegate.m in Sources */,
+				EA173D4E1DC4A63200078D6A /* MCConnack.m in Sources */,
+				EA0FEF821DC3D6C60065DAA2 /* MCDashboardViewController.m in Sources */,
+				EA173D571DC4F39600078D6A /* MCPingresp.m in Sources */,
 				EA21CBE81DBF56F30021896A /* MCParser.m in Sources */,
+				EAE97C061DC2888100521457 /* MCDisconnect.m in Sources */,
 				EA1538231DBA51D10066393C /* MCClientSocket.m in Sources */,
 				EA1090631DB656A000590D4A /* main.m in Sources */,
+				EA173D4A1DC4A01700078D6A /* MCLength.m in Sources */,
+				EA173D5E1DC4F60600078D6A /* MCTimingThread.m in Sources */,
 				EA10907B1DB6574A00590D4A /* MQTT.m in Sources */,
 				EA1538271DBA74710066393C /* MCSettingsViewController.m in Sources */,
 				EA15381F1DBA51130066393C /* MCSettings.m in Sources */,
+				EAE97C021DC2074800521457 /* MCConnect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

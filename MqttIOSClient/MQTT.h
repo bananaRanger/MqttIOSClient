@@ -7,16 +7,24 @@
 //
 
 #import "MCClientSocket.h"
+#import "MCTimingThread.h"
+#import "MCParser.h"
 
-@class MQTT;
-
-@interface MQTT : NSObject <MCClientSocketDelegate>
+@interface MQTT : NSObject <MCClientSocketDelegate, MCTimingThreadDelegate>
 {
     MCClientSocket *_socket;
+    MCParser *_parser;
+    id<MCMessage> _message;
+    BOOL _isConnect;
+    MCTimingThread *_timingThread;
+    NSThread *_thread;
 }
 
-- (void) connect;
+@property (assign , nonatomic, readonly) BOOL isConnect;
 
+- (void) connect : (id<MCMessage>) message;
 - (void) disconnect;
+
+- (void) disconnectTCP;
 
 @end

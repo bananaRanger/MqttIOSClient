@@ -33,8 +33,8 @@ static NSInteger const MCCapacity           = 1024;
     self = [super init];
     if (self != nil) {
         
-        self->_address = [NSString stringWithFormat:@"192.168.1.102"];
-        self->_port = 4000;
+        self->_address = [NSString stringWithFormat:@"198.41.30.241"];
+        self->_port = 1883;
     }
     return self;
 }

@@ -15,23 +15,23 @@
 
 #pragma mark -MCClientError-
 
-enum MCClientError {
+typedef enum {
     MCSocketConnectionSuccess   = 0,
     MCSocketConnectionError     = 1,
     MCSocketTimeoutError        = 2,
     MCReadDataError             = 3,
     MCWriteDataError            = 4,
     MCInvalidRequestData        = 5
-};
+} MCClientError;
 
 #pragma mark -MCClientSocketDelegate-
 
 @protocol MCClientSocketDelegate <NSObject>
 - (void) socket : (MCClientSocket *) clientSocket didConnectToAddress       : (NSString *) address port : (NSInteger) port;
 - (void) socket : (MCClientSocket *) clientSocket didDisconnectFromAddress  : (NSString *) address port : (NSInteger) port;
-- (void) socket : (MCClientSocket *) clientSocket didReadData   : (NSString *) data;
-- (void) socket : (MCClientSocket *) clientSocket didWriteData  : (NSString *) data;
-- (void) socket : (MCClientSocket *) clientSocket socketError   : (enum MCClientError) error;
+- (void) socket : (MCClientSocket *) clientSocket didReadData   : (NSMutableData *) data;
+- (void) socket : (MCClientSocket *) clientSocket didWriteData  : (NSMutableData *) data;
+- (void) socket : (MCClientSocket *) clientSocket socketError   : (MCClientError) error;
 @end
 
 #pragma mark -MCClientSocket-
@@ -51,6 +51,6 @@ enum MCClientError {
 - (void) start;
 - (void) stop;
 
-- (void) requestToServer : (NSString *) data;
+- (void) requestToServer : (NSMutableData *) data;
 
 @end

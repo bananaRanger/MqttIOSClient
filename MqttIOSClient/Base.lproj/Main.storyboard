@@ -19,35 +19,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecm-Hy-53A">
-                                <color key="backgroundColor" red="0.93333333330000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Disconnect">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="changeClientStateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="99r-FE-iMP"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fN-Bo-6f2">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ofk-xz-1SV">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4lr-hx-Xvm">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOl-Os-sUF">
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="ovh-vC-5BE"/>
-                                </constraints>
                                 <state key="normal" title="Connect">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="changeClientStateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cBs-5u-lBk"/>
+                                    <action selector="connectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3h8-ht-KMK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MQTT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBR-en-tj8">
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PH-mX-3jj">
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="14"/>
+                                <color key="textColor" red="0.93333333330000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jf3-Gt-o7H">
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Disconnect TCP">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="connectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zVK-1a-Ull"/>
+                                    <action selector="disconnectTCPButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nFQ-VQ-5R0"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3411764706" green="0.85490196080000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HOl-Os-sUF" secondAttribute="bottom" constant="8" id="2zd-Qn-DAW"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ecm-Hy-53A" secondAttribute="bottom" constant="8" id="Gzg-MA-Rjp"/>
-                            <constraint firstItem="Ecm-Hy-53A" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="joc-mJ-vjA"/>
+                            <constraint firstItem="jf3-Gt-o7H" firstAttribute="leading" secondItem="HOl-Os-sUF" secondAttribute="trailing" constant="20" id="0RA-0U-EVU"/>
+                            <constraint firstItem="9fN-Bo-6f2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="151" id="0YQ-OH-zXA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HOl-Os-sUF" secondAttribute="bottom" constant="20" id="2zd-Qn-DAW"/>
+                            <constraint firstItem="4lr-hx-Xvm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="227" id="4nJ-38-0i1"/>
+                            <constraint firstItem="9fN-Bo-6f2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="B7d-U5-riJ"/>
+                            <constraint firstItem="PBR-en-tj8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LNG-Ad-q6M"/>
+                            <constraint firstItem="Ofk-xz-1SV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Lha-4k-1x1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jf3-Gt-o7H" secondAttribute="bottom" constant="20" id="RqS-ZI-egG"/>
+                            <constraint firstItem="HOl-Os-sUF" firstAttribute="width" secondItem="jf3-Gt-o7H" secondAttribute="width" id="UIb-cg-3ku"/>
+                            <constraint firstItem="9fN-Bo-6f2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Uja-m0-U7Z"/>
+                            <constraint firstItem="4lr-hx-Xvm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cGo-fO-NTo"/>
+                            <constraint firstItem="7PH-mX-3jj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dI3-L9-b1H"/>
+                            <constraint firstItem="7PH-mX-3jj" firstAttribute="top" secondItem="4lr-hx-Xvm" secondAttribute="bottom" constant="8" id="eHL-wr-YJF"/>
+                            <constraint firstItem="4lr-hx-Xvm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hcN-ZA-KUC"/>
+                            <constraint firstItem="PBR-en-tj8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="jO4-B8-CV9"/>
                             <constraint firstItem="HOl-Os-sUF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mNd-Bw-aA9"/>
-                            <constraint firstItem="HOl-Os-sUF" firstAttribute="width" secondItem="Ecm-Hy-53A" secondAttribute="width" id="sfV-pa-UnR"/>
+                            <constraint firstItem="Ofk-xz-1SV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="189" id="n2S-QN-vh7"/>
+                            <constraint firstItem="jf3-Gt-o7H" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rqn-sc-Iiw"/>
+                            <constraint firstItem="7PH-mX-3jj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tsL-pS-NIZ"/>
+                            <constraint firstItem="Ofk-xz-1SV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wgf-NB-DjI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1gz-qb-jbn">
@@ -59,13 +97,18 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="confirmPasswordTextField" destination="4lr-hx-Xvm" id="Lat-T4-Vn8"/>
                         <outlet property="connectButton" destination="HOl-Os-sUF" id="YJD-P4-wM0"/>
-                        <outlet property="disconnectButton" destination="Ecm-Hy-53A" id="50b-p7-uDs"/>
+                        <outlet property="disconnectButton" destination="jf3-Gt-o7H" id="cOu-KG-GTF"/>
+                        <outlet property="errorMessageLabel" destination="7PH-mX-3jj" id="WV9-8D-N4N"/>
+                        <outlet property="loginTextField" destination="9fN-Bo-6f2" id="QYk-mi-hkW"/>
+                        <outlet property="passwordTextField" destination="Ofk-xz-1SV" id="i25-hM-HhW"/>
+                        <segue destination="lqK-8J-zX0" kind="show" identifier="MCDashboardSegue" id="xTq-v1-Jx8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1060" y="108"/>
+            <point key="canvasLocation" x="1060" y="107.49625187406298"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="gA7-q1-VMR">
@@ -110,14 +153,14 @@
                             <constraint firstItem="b3a-aP-bcm" firstAttribute="trailing" secondItem="jIN-WQ-2pf" secondAttribute="trailingMargin" id="15b-RO-ycK"/>
                             <constraint firstItem="Wg6-Ab-66w" firstAttribute="trailing" secondItem="jIN-WQ-2pf" secondAttribute="trailingMargin" id="5MR-cs-zwh"/>
                             <constraint firstItem="b3a-aP-bcm" firstAttribute="leading" secondItem="jIN-WQ-2pf" secondAttribute="leadingMargin" id="5xj-En-rGl"/>
+                            <constraint firstItem="b3a-aP-bcm" firstAttribute="top" secondItem="JuQ-r9-NiT" secondAttribute="bottom" constant="8" id="9sw-Ej-aux"/>
                             <constraint firstItem="wTe-Ij-ndI" firstAttribute="leading" secondItem="jIN-WQ-2pf" secondAttribute="leadingMargin" id="HUV-nb-kRr"/>
                             <constraint firstItem="XJV-B4-Enx" firstAttribute="trailing" secondItem="jIN-WQ-2pf" secondAttribute="trailingMargin" id="MfT-Am-C4O"/>
-                            <constraint firstItem="b3a-aP-bcm" firstAttribute="top" secondItem="JuQ-r9-NiT" secondAttribute="bottom" constant="8" id="PxN-Yc-V30"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wTe-Ij-ndI" secondAttribute="trailing" id="VL8-XL-4LD"/>
                             <constraint firstItem="XJV-B4-Enx" firstAttribute="top" secondItem="Wg6-Ab-66w" secondAttribute="bottom" constant="8" id="bS7-TO-DAG"/>
+                            <constraint firstItem="cNH-qU-FjK" firstAttribute="top" secondItem="wTe-Ij-ndI" secondAttribute="bottom" constant="20" id="jbt-7m-mJ1"/>
                             <constraint firstItem="Wg6-Ab-66w" firstAttribute="top" secondItem="b3a-aP-bcm" secondAttribute="bottom" constant="30" id="lrf-1u-Lqe"/>
                             <constraint firstItem="Wg6-Ab-66w" firstAttribute="leading" secondItem="jIN-WQ-2pf" secondAttribute="leadingMargin" id="oji-DC-jcE"/>
-                            <constraint firstItem="wTe-Ij-ndI" firstAttribute="top" secondItem="XJV-B4-Enx" secondAttribute="bottom" constant="30" id="uCj-1E-dpU"/>
                             <constraint firstItem="XJV-B4-Enx" firstAttribute="leading" secondItem="jIN-WQ-2pf" secondAttribute="leadingMargin" id="xe9-Ha-Mp7"/>
                         </constraints>
                     </view>
@@ -129,7 +172,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t45-aQ-GLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1893.5999999999999" y="-115.59220389805098"/>
+            <point key="canvasLocation" x="1961" y="-295"/>
+        </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="eeY-2n-M7p">
+            <objects>
+                <viewController id="lqK-8J-zX0" customClass="MCDashboardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mql-Wx-hDE"/>
+                        <viewControllerLayoutGuide type="bottom" id="kIr-jW-sP7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FxF-lN-rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HELLO!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guu-Lg-tns">
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70h-ka-dNQ">
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Disconnect MQTT">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="disconnectButton:" destination="lqK-8J-zX0" eventType="touchUpInside" id="Ww6-3c-coN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3411764706" green="0.85490196080000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="70h-ka-dNQ" firstAttribute="trailing" secondItem="FxF-lN-rvc" secondAttribute="trailingMargin" id="Ruq-R7-e6h"/>
+                            <constraint firstItem="70h-ka-dNQ" firstAttribute="leading" secondItem="FxF-lN-rvc" secondAttribute="leadingMargin" id="SVC-ek-pJc"/>
+                            <constraint firstItem="70h-ka-dNQ" firstAttribute="leading" secondItem="FxF-lN-rvc" secondAttribute="leadingMargin" id="Ysl-Hq-gFJ"/>
+                            <constraint firstItem="guu-Lg-tns" firstAttribute="top" secondItem="Mql-Wx-hDE" secondAttribute="bottom" constant="8" id="bKE-x2-N9P"/>
+                            <constraint firstItem="guu-Lg-tns" firstAttribute="leading" secondItem="FxF-lN-rvc" secondAttribute="leadingMargin" id="dAH-LS-udL"/>
+                            <constraint firstItem="kIr-jW-sP7" firstAttribute="top" secondItem="70h-ka-dNQ" secondAttribute="bottom" constant="20" id="jeS-5y-JUT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="70h-ka-dNQ" secondAttribute="trailing" id="mQO-6V-xLA"/>
+                            <constraint firstItem="guu-Lg-tns" firstAttribute="trailing" secondItem="FxF-lN-rvc" secondAttribute="trailingMargin" id="v6O-zd-vp1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="disconnectButton" destination="70h-ka-dNQ" id="rtO-BG-js0"/>
+                        <outlet property="helloLabel" destination="guu-Lg-tns" id="sYL-va-QNA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Jq-9R-yNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1961" y="446"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hCh-T1-X0g">

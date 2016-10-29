@@ -79,25 +79,29 @@ static const double MCConnectionTimeout = 10.0f;
     self->_isStart = false;
 }
 
-- (void) requestToServer : (NSString *) data {
-        
-    char readBuffer[MCBufferSize];
-    const char *writeBuffer = [data cStringUsingEncoding:NSUTF8StringEncoding];
+- (void) requestToServer : (NSMutableData *) data {
+
+    Byte readBuffer[MCBufferSize];
     
-    if (strlen(writeBuffer) == 0) {
+    NSUInteger length = [data length];
+    Byte *writeBuffer = (Byte *)malloc(length);
+    
+    memcpy(writeBuffer, [data bytes], length);
+    
+    if (length == 0) {
         [self.delegate socket:self socketError:MCInvalidRequestData];
         return;
     }
     
-    ssize_t count = write(self->_descriptor, writeBuffer, strlen(writeBuffer));
+    ssize_t count = write(self->_descriptor, writeBuffer, length);
     if (count <= 0) {
         [self.delegate socket:self socketError:MCReadDataError];
         return;
     } else {
-        [self.delegate socket:self didWriteData:data];
+        [self.delegate socket:self didWriteData:[NSMutableData dataWithBytes:writeBuffer length:length]];
     }
     
-    count = read(self->_descriptor, readBuffer, MCBufferSize);
+    count = read(self->_descriptor, readBuffer, 4);
     if (count <= 0) {
         [self.delegate socket:self socketError:MCWriteDataError];
         return;
@@ -105,9 +109,7 @@ static const double MCConnectionTimeout = 10.0f;
     
     readBuffer[count] = 0;
     
-    NSString *answer = [NSString stringWithCString:readBuffer encoding:NSUTF8StringEncoding];
-    
-    [self.delegate socket:self didReadData:answer];
+    [self.delegate socket:self didReadData:[NSMutableData dataWithBytes:readBuffer length:count]];
 }
 
 @end
